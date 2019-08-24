@@ -30,10 +30,12 @@
                     <div class="grid">
                         <div class="item">
                             <div class="item-inside">
-                                <img src="./assets/pic1.png" alt="pic1.png">
+                                <img src="./assets/project1_star_wars_rpg_game.png" alt="pic1.png">
                             </div>
                             <div class="item-banner">
-                                Project 1
+                                <p>Star Wars RPG Game</p>
+                                <button id="button_1_site" value="https://alex0n0.github.io/Star-Wars-RPG-Game/">View Site</button>
+                                <button id="button_1_source" value="https://github.com/alex0n0/Star-Wars-RPG-Game">View Source</button>
                             </div>
                         </div>
                     </div>
@@ -88,5 +90,17 @@
         </p>
 
     </footer>
+
+    <script>
+        let button1Site = document.querySelector('#button_1_site');
+        let button1Source = document.querySelector('#button_1_source');
+        button1Site.addEventListener('click', clickButton);
+        button1Source.addEventListener('click', clickButton);
+
+        function clickButton(e) {
+            window.open(e.target.value);
+        }
+        
+    </script>
 </body>
 </html>
