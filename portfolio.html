@@ -42,10 +42,12 @@
                     <div class="grid">
                         <div class="item">
                             <div class="item-inside">
-                                <img src="./assets/pic2.png" alt="pic1.png">
+                                <img src="./assets/project2_trivia_game.png" alt="pic1.png">
                             </div>
                             <div class="item-banner">
-                                Project 2
+                                <p>Trivia Game</p>
+                                <button id="button_2_site" value="https://alex0n0.github.io/TriviaGame/">View Site</button>
+                                <button id="button_2_source" value="https://github.com/alex0n0/TriviaGame">View Source</button>
                             </div>
                         </div>
                     </div>
@@ -96,6 +98,11 @@
         let button1Source = document.querySelector('#button_1_source');
         button1Site.addEventListener('click', clickButton);
         button1Source.addEventListener('click', clickButton);
+
+        let button2Site = document.querySelector('#button_2_site');
+        let button2Source = document.querySelector('#button_2_source');
+        button2Site.addEventListener('click', clickButton);
+        button2Source.addEventListener('click', clickButton);
 
         function clickButton(e) {
             window.open(e.target.value);
