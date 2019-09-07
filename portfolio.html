@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +8,13 @@
     <title>PORTFOLIO | Alex Wu</title>
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
+
 <body>
     <header>
         <div class="container">
-            <div class="logo"><a href="./index.html"><h2>ALEX</h2></a></div>
+            <div class="logo"><a href="./index.html">
+                    <h2>ALEX</h2>
+                </a></div>
             <nav>
                 <ul>
                     <li><a href="./index.html">About</a></li>
@@ -30,34 +34,42 @@
                     <div class="grid">
                         <div class="item">
                             <div class="item-inside">
-                                <img src="./assets/project1_star_wars_rpg_game.png" alt="pic1.png">
+                                <img src="./assets/project1_star_wars_rpg_game.png" alt="star wars rpg game project">
                             </div>
                             <div class="item-banner">
                                 <p>Star Wars RPG Game</p>
-                                <button id="button_1_site" value="https://alex0n0.github.io/Star-Wars-RPG-Game/">View Site</button>
-                                <button id="button_1_source" value="https://github.com/alex0n0/Star-Wars-RPG-Game">View Source</button>
+                                <button id="button_1_site" value="https://alex0n0.github.io/Star-Wars-RPG-Game/">View
+                                    Site</button>
+                                <button id="button_1_source" value="https://github.com/alex0n0/Star-Wars-RPG-Game">View
+                                    Source</button>
                             </div>
                         </div>
                     </div>
                     <div class="grid">
                         <div class="item">
                             <div class="item-inside">
-                                <img src="./assets/project2_trivia_game.png" alt="pic1.png">
+                                <img src="./assets/project2_trivia_game.png" alt="trivia game project">
                             </div>
                             <div class="item-banner">
                                 <p>Trivia Game</p>
-                                <button id="button_2_site" value="https://alex0n0.github.io/TriviaGame/">View Site</button>
-                                <button id="button_2_source" value="https://github.com/alex0n0/TriviaGame">View Source</button>
+                                <button id="button_2_site" value="https://alex0n0.github.io/TriviaGame/">View
+                                    Site</button>
+                                <button id="button_2_source" value="https://github.com/alex0n0/TriviaGame">View
+                                    Source</button>
                             </div>
                         </div>
                     </div>
                     <div class="grid">
                         <div class="item">
                             <div class="item-inside">
-                                <img src="./assets/pic3.png" alt="pic1.png">
+                                <img src="./assets/project3_giftastic.png" alt="giftastic project">
                             </div>
                             <div class="item-banner">
-                                Project 3
+                                <p>GifTastic Project</p>
+                                <button id="button_3_site" value="https://alex0n0.github.io/GifTastic/">View
+                                    Site</button>
+                                <button id="button_3_source" value="https://github.com/alex0n0/GifTastic">View
+                                    Source</button>
                             </div>
                         </div>
                     </div>
@@ -104,10 +116,16 @@
         button2Site.addEventListener('click', clickButton);
         button2Source.addEventListener('click', clickButton);
 
+        let button3Site = document.querySelector('#button_3_site');
+        let button3Source = document.querySelector('#button_3_source');
+        button3Site.addEventListener('click', clickButton);
+        button3Source.addEventListener('click', clickButton);
+
         function clickButton(e) {
             window.open(e.target.value);
         }
-        
+
     </script>
 </body>
+
 </html>
