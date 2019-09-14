@@ -76,10 +76,14 @@
                     <div class="grid">
                         <div class="item">
                             <div class="item-inside">
-                                <img src="./assets/pic4.png" alt="pic1.png">
+                                <img src="./assets/project4_train_scheduler.png" alt="train scheduler project">
                             </div>
                             <div class="item-banner">
-                                Project 4
+                                <p>Train Scheduler Project</p>
+                                <button id="button_4_site" value="https://alex0n0.github.io/Train_Scheduler/">View
+                                    Site</button>
+                                <button id="button_4_source" value="https://github.com/alex0n0/Train_Scheduler">View
+                                    Source</button>
                             </div>
                         </div>
                     </div>
@@ -120,6 +124,11 @@
         let button3Source = document.querySelector('#button_3_source');
         button3Site.addEventListener('click', clickButton);
         button3Source.addEventListener('click', clickButton);
+
+        let button4Site = document.querySelector('#button_4_site');
+        let button4Source = document.querySelector('#button_4_source');
+        button4Site.addEventListener('click', clickButton);
+        button4Source.addEventListener('click', clickButton);
 
         function clickButton(e) {
             window.open(e.target.value);
